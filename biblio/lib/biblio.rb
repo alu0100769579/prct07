@@ -1,5 +1,6 @@
 require "biblio/version"
+require "biblio/class"
 
 module Biblio
-  # Your code goes here...
+
 end
