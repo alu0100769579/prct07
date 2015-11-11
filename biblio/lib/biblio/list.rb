@@ -1,16 +1,23 @@
 
+Node = Struct.new(:value, :next)
+
+
 class   List
-    
-   Node = Struct.new(:value, :next)
    
-   def initialize (node)
+    def initialize ()
            
-        @elemento = Node.new(node)
+        @elemento = Node.new(nil)
     end
+    
+    def elemento
+        
+        @elemento
+    end   
     
     def push(node)
         
         if @elemento != nil
+            
             node.next = @elemento
             @elemento = node
         end
@@ -22,14 +29,10 @@ class   List
     end
     
     def extraer 
+        
         aux = @elemento
         @elemento = @elemento.next
         aux.value
     end    
-    
-    def elemento
-        @elemento
-    end    
-    
     
 end
