@@ -23,11 +23,6 @@ class   List
         end
     end
     
-    #def pop(node)
-        
-   #    @elemento = @elemento.next 
-   # end
-    
     def extraer_elemento 
         
         aux = @elemento
