@@ -53,13 +53,22 @@ describe Libro do
 		describe "Se pueden insertar varios elementos" do
 			it "Se insertaron correctamente" do
 				@lista.insertar_elemento(@node3)
+				expect(@lista.elemento).to eq(@node3)
 				@lista.insertar_elemento(@node4)
+				expect(@lista.elemento).to eq(@node4)
 				@lista.insertar_elemento(@node5)
 				expect(@lista.elemento).to eq(@node5)
-				@lista.extraer_elemento
-				expect(@lista.elemento).to eq(@node4)
-				@lista.extraer_elemento
-				expect(@lista.elemento).to eq(@node3)
+				#@lista.extraer_elemento
+				
+				#@lista.extraer_elemento
+				
+			end
+		end
+		
+		describe "Debe existir una lista con su cabeza" do
+			it "Existe" do
+				@lista.insertar_elemento(@node1)
+				expect(@lista.elemento).to eq(@node1)
 			end
 		end
 	end
