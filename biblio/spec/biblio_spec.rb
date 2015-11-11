@@ -58,10 +58,6 @@ describe Libro do
 				expect(@lista.elemento).to eq(@node4)
 				@lista.insertar_elemento(@node5)
 				expect(@lista.elemento).to eq(@node5)
-				#@lista.extraer_elemento
-				
-				#@lista.extraer_elemento
-				
 			end
 		end
 		
