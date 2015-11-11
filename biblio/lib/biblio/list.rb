@@ -14,7 +14,7 @@ class   List
         @elemento
     end   
     
-    def push(node)
+    def insertar_elemento(node)
         
         if @elemento != nil
             
@@ -23,12 +23,12 @@ class   List
         end
     end
     
-    def pop(node)
+    #def pop(node)
         
-       @elemento = @elemento.next 
-    end
+   #    @elemento = @elemento.next 
+   # end
     
-    def extraer 
+    def extraer_elemento 
         
         aux = @elemento
         @elemento = @elemento.next

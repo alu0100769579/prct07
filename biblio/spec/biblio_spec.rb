@@ -14,6 +14,8 @@ describe Libro do
         @node3 = Node.new(@libro3)
         @node4 = Node.new(@libro4)
         @node5 = Node.new(@libro5)
+        
+        @lista = List.new()
        
 	end
 
@@ -30,7 +32,17 @@ describe Libro do
 		
 	end
 	
-	
+	context "Lista" do
+		
+		describe "Se extrae el primer elemento de la lista" do
+			it "Se extrae correctamente" do
+				@lista.insertar_elemento(@node1)
+				@lista.insertar_elemento(@node2)
+				@lista.extraer_elemento
+				expect(@lista.elemento).to eq(@node1)
+			end
+		end
+	end
 
 
 
