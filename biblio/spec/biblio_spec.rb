@@ -42,6 +42,13 @@ describe Libro do
 				expect(@lista.elemento).to eq(@node1)
 			end
 		end
+		
+		describe "Se puede insertar un elemento" do
+			it "Se inserta correctamente" do
+				@lista.insertar_elemento(@node3)
+				expect(@lista.elemento).to eq(@node3)
+			end
+		end
 	end
 
 
